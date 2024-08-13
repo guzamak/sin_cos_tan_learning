@@ -145,7 +145,7 @@ function drawTriangle(angleDegrees){
     
         // sin(x) = opposite / hypottenuse  ข้ามฉาก
         // yEndPoint = จุดกึ่งกลางวงกลม + (รัศมี * -sin(angle)) 
-        // ได้ จุด เเกน y (opposite) ฝั่งชิดเเนวตั้ง
+        // ได้ จุด เเกน y (opposite) ฝั่งข้ามเเนวตั้ง
         // เหตุผลที่ -sin เพราะ canvas ใน html ถ้าบวกจะลงไปข้างล่าง เเต่ในกราฟจริงๆถ้าบวกจะขึ้นบน ทำให้ต้องลบ 
         let yEndPoint = Y_CIRCLE_CENTER + RADIUS * -(Math.sin(degreesToRadians(angleDegrees)));
         drawTextAtPoint("Radians : " + degreesToRadians(angleDegrees).toFixed(2), 15, 85);
